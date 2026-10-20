@@ -272,7 +272,7 @@ end
 local function tp(hp)
     Humanoid:ChangeState(11)
     local d = (HRP.Position - hp.Position).Magnitude
-    local t = TweenService:Create(HRP, TweenInfo.new(d / 50, Enum.EasingStyle.Linear), {CFrame = hp.CFrame})
+    local t = TweenService:Create(HRP, TweenInfo.new(d / 40, Enum.EasingStyle.Linear), {CFrame = hp.CFrame})
     t:Play()
     t.Completed:Wait()
 end
